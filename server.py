@@ -31,9 +31,11 @@ def log_event():
 
     if not table_id or not event:
         return jsonify({"error": "Invalid data"}), 400
-    global total_calls_count
-    total_calls_count += 1
 
+    global total_calls_count
+    if event == "Customer_Called":
+        total_calls_count += 1
+    
     # Update latest table status
     table_states[table_id] = {
         "table_id": table_id,
@@ -90,7 +92,7 @@ def get_data():
     return jsonify({
         "live_status": live_status,
         "analytics": {
-            "total": total_calls,
+            "total": total_calls_count,
             "open": open_calls
         }
     })
