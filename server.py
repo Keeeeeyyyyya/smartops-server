@@ -90,7 +90,7 @@ def get_data():
     return jsonify({
         "live_status": live_status,
         "analytics": {
-            "total": total_calls_count,
+            "total": total_calls,
             "open": open_calls
         }
     })
