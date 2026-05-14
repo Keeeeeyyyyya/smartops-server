@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 # Store latest live state
 table_states = {}
+total_calls_count = 0
 
 # Create CSV file automatically
 if not os.path.exists("logs.csv"):
@@ -30,6 +31,8 @@ def log_event():
 
     if not table_id or not event:
         return jsonify({"error": "Invalid data"}), 400
+    global total_calls_count
+    total_calls_count += 1
 
     # Update latest table status
     table_states[table_id] = {
@@ -87,7 +90,7 @@ def get_data():
     return jsonify({
         "live_status": live_status,
         "analytics": {
-            "total": total_calls,
+            "total": total_calls_count,
             "open": open_calls
         }
     })
