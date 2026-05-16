@@ -1,19 +1,27 @@
 from flask import Flask, request, jsonify
 from datetime import datetime
-import csv
-import os
+import gspread
+from google.oauth2.service_account import Credentials
 
 app = Flask(__name__)
+
+scope = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive"
+]
+
+creds = Credentials.from_service_account_file(
+    "trim-plexus-455514-p4-4707dc584727.json",
+    scopes=scope
+)
+
+client = gspread.authorize(creds)
+
+sheet = client.open("Restaurant Logs").sheet1
 
 # Store latest live state
 table_states = {}
 total_calls_count = 0
-
-# Create CSV file automatically
-if not os.path.exists("logs.csv"):
-    with open("logs.csv", "w", newline="") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Date", "Time", "Table", "Event"])
 
 
 # ==========================================
@@ -44,17 +52,13 @@ def log_event():
         "time": time_str,
         "updated_at": datetime.now()
     }
+    sheet.append_row([
+    datetime.now().strftime("%d-%m-%Y"),
+    datetime.now().strftime("%H:%M:%S"),
+    table_id,
+    event
+    ])
 
-    # Save FULL history permanently
-    with open("logs.csv", "a", newline="") as file:
-        writer = csv.writer(file)
-
-        writer.writerow([
-            datetime.now().strftime("%d-%m-%Y"),
-            datetime.now().strftime("%H:%M:%S"),
-            table_id,
-            event
-        ])
 
     return jsonify({
         "status": "success"
