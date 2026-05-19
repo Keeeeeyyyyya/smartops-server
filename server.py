@@ -53,10 +53,10 @@ def log_event():
         "updated_at": datetime.now()
     }
     sheet.append_row([
-    datetime.now().strftime("%d-%m-%Y"),
-    datetime.now().strftime("%H:%M:%S"),
-    table_id,
-    event
+        datetime.now().strftime("%d-%m-%Y"),
+        datetime.now().strftime("%H:%M:%S"),
+        table_id,
+        event
     ])
 
 
