@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "trim-plexus-455514-p4",
+  "private_key_id": "868b8fb740b15239e6812645f0507e65cb110a3b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDGNvv8l33ST6qM\n2Wy/hHoc5iC2nmIYpxjrUD31EYPcQ1y/NrJxlq7UHMdklf6v7RBIRaBvhbNVaot6\nbi0rKdf5zHYbNsSBXVuvXUIx3ctx4zZ7ae4VEwbOcrx5CRZpx7ksJGa/0FIWedgm\nGyHqKBKUyF7F2r9lFTOKHIbdvHVNGweM5QUr2FIlrG6N/xGS2Ntix8C6PByBzDVU\nSPZ8HSgj3HSOWaYbNres+mzxc3jrjJoZq0c32vBzT99w23cVSKXslbq8UJkR/lBz\nTIIi+1ViHZHR3j8s7IW6JKyu7sV+ESSqsKgpfR7ewg7WLNFSvDOMP/0G/Up7uFjP\nRRfbr+ITAgMBAAECggEAIteHc98tPsrCMAAIHaIr1Oie13r/w1WcC8EPIwTxKMau\nhu4Wb+EM2jw00HmNS19gfVO/39qgq2MPIXY8elngnQhTunTmFddTRoAeIqXaHSrT\naN41+35cs+13M89lITL6WcgMR6tWwpyoYgpi68Yffge6oQzSl/IiHSTmkBOQivzm\nA5OT6Qbwc3NAiAnHGfjk1C5qZRl2A+sAongfs1JMpIj5hAMbeOVlIs1h/paJfIK/\nA0gSvK3MUbrjLFSZKprhCNSRIGGStcL8N4BGgb6Bc8z9jl4pRzMahs/SUjTFqmUu\niG+zAsc8LI/3az2BWRCybgcbpvo66v+iJIi2mxBgAQKBgQDuocYEU+kSJ+mVsYZC\ngHtjR2hDIBS8kwFwM78wiHgrzoWKp2vYAufA51h9Ug9JCxGuxZ4Gk2JktUcLr2OT\n+m+KdgXDY0cpL4xFzt5EFlRpLuKE4qmdrmEwd08+Sg/3G4vdabSCr0CLZ2NmAjoC\nfPTS5EsernlT11fI6SaE4qAXcQKBgQDUpCcDw21C9dtKvmBLbs9GCeDxymx2CRSf\n2ZaGaJPreGooMPWjhGDJFCeEsJ+9rQIhPSOEzbQUSUCKWdQ1nIk0RQQC+J8Op6b5\nsrsWLqyKXv+kgRQa+aWbFc3C+J+yq4Ylh2yaZnQQ5JxwC6lIpQWzLF3l2t+nl7LC\nS5ErxyD3wwKBgHTOLM4LgKdJcBW8ypocp8jluAw7VMslLewM+EW6VxAiS82du7UF\nXwlWdEMLer3nNCWXR42ycNQYw4jdteFGEXj14kZMfxWS15eH9dXgFDtUHr6q8Bll\ntN7zV4+G0x/ClQiw6BGb1P0ng0j4SArVvUTJSFfhUTQP0UFflmIvR+uRAoGBAJKy\nsMvS3iUs8l3tWwePaeXa2NpWmV8RQq5I8aTGrw3rI+mYZU6q/A6dHepX48x6eBaw\nVDnBpDO+mY0ZDeLynGF4H51hInJ8zSBE4vcZuiU4BsvZ1SILCuokL7ELzzj3RnPL\nquwWNIqW/Sn7kY0xc+45dIon5tZ7PHL4qS13klH7AoGBAKlCEX/whhM0oLPTo420\nhibYOddZmF8lQ0mvwtmN5NjFiUwooed7HmHNSMLHgusmTXSTpU+GAlnzmiU5FqTn\n9FicGJ0SByjgna6cHCVX8axwVQvcWJfi5CKJncXDXvrKmyBNHML7Tw8i0vm3/I/l\nMB+kxHNs9BXSjgxl89lBjOvD\n-----END PRIVATE KEY-----\n",
+  "client_email": "smartops-server@trim-plexus-455514-p4.iam.gserviceaccount.com",
+  "client_id": "106988640809085207853",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smartops-server%40trim-plexus-455514-p4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
