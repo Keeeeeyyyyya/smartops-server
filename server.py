@@ -11,7 +11,7 @@ scope = [
 ]
 
 creds = Credentials.from_service_account_file(
-    "trim-plexus-455514-p4-4707dc584727.json",
+    "google_key.json",
     scopes=scope
 )
 
