@@ -52,12 +52,17 @@ def log_event():
         "time": time_str,
         "updated_at": datetime.now()
     }
-    sheet.append_row([
-    datetime.now().strftime("%d-%m-%Y"),
-    datetime.now().strftime("%H:%M:%S"),
-    table_id,
-    event
-    ])
+    try:
+        sheet.append_row([
+            datetime.now().strftime("%d-%m-%Y"),
+            datetime.now().strftime("%H:%M:%S"),
+            table_id,
+            event
+        ])
+        print("Google Sheet updated successfully")
+
+    except Exception as e:
+        print("Google Sheets Error:", str(e))
 
 
     return jsonify({
