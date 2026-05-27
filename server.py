@@ -15,9 +15,13 @@ creds = Credentials.from_service_account_file(
     scopes=scope
 )
 
-client = gspread.authorize(creds)
+try:
+    client = gspread.authorize(creds)
+    sheet = client.open("Restaurant Logs").sheet1
+    print("Google Sheet Connected Successfully")
 
-sheet = client.open("Restaurant Logs").sheet1
+except Exception as e:
+    print("Google Sheets Startup Error:", str(e))
 
 # Store latest live state
 table_states = {}
